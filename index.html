@@ -9,16 +9,20 @@
 <body>
     <div class="container">
         <h1>Weather App</h1>
-        <div class="search-box">
-            <input type="text" id="locationInput" placeholder="Enter a location (city or ZIP code)">
-            <button id="getWeatherBtn">Get Weather</button>
-            <select id="unitSelector">
-                <option value="metric">Celsius</option>
-                <option value="imperial">Fahrenheit</option>
-            </select>
-        </div>
-        <div class="weather-info" id="weatherInfo">
-            <!-- Weather data will be displayed here -->
+        <div class="weather-widget">
+            <div class="search-box">
+                <input type="text" id="locationInput" placeholder="Enter a location (city or ZIP code)">
+                <div class="button-dropdown-container">
+                    <button id="getWeatherBtn">Get Weather</button>
+                    <select id="unitSelector">
+                        <option value="metric">Celsius</option>
+                        <option value="imperial">Fahrenheit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weather-info" id="weatherInfo">
+                <!-- Weather data will be displayed here -->
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

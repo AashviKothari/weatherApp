@@ -1,31 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width */
+    padding: 40px;
+    background: rgb(0,212,255);
+background: radial-gradient(circle, rgba(0,212,255,1) 6%, rgba(4,128,199,0.68968837535014) 43%, rgba(9,9,121,1) 95%);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 h1 {
     color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
+.weather-widget {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 .search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 input[type="text"] {
-    width: 70%;
+    width: 60%;
     padding: 10px;
-    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    outline: none;
 }
 
 button {
@@ -35,14 +60,23 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Add margin between button and dropdown */
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 select {
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
-
 .weather-info {
     text-align: left;
     display: none;
@@ -52,4 +86,11 @@ select {
 .error-message {
     color: red;
     font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.button-dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate from the input field */
 }
